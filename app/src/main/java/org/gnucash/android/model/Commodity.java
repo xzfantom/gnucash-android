@@ -24,9 +24,9 @@ import org.gnucash.android.db.adapter.CommoditiesDbAdapter;
  */
 public class Commodity extends BaseModel {
 
-    public enum Namespace { ISO4217 } //Namespace for commodities
+    public enum Namespace { ISO4217, CURRENCY } //Namespace for commodities
 
-    private Namespace mNamespace = Namespace.ISO4217;
+    private Namespace mNamespace = Namespace.CURRENCY;
 
     /**
      * Default commodity for device locale

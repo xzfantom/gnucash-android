@@ -241,7 +241,7 @@ public class MigrationHelper {
         XMLReader xr = sp.getXMLReader();
 
         InputStream commoditiesInputStream = GnuCashApplication.getAppContext().getResources()
-                .openRawResource(R.raw.iso_4217_currencies);
+                .openRawResource(R.raw.currencies);
         BufferedInputStream bos = new BufferedInputStream(commoditiesInputStream);
 
         /** Create handler to handle XML Tags ( extends DefaultHandler ) */

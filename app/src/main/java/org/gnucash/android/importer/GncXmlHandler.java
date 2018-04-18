@@ -434,7 +434,9 @@ public class GncXmlHandler extends DefaultHandler {
             case GncXmlHelper.TAG_COMMODITY_SPACE:
                 if (characterString.equals("ISO4217")) {
                     mISO4217Currency = true;
-                } else {
+                } else if (characterString.equals("CURRENCY")) {
+                    mISO4217Currency = true; // TODO: rewrite for currency
+                }else {
                     // price of non-ISO4217 commodities cannot be handled
                     mPrice = null;
                 }
